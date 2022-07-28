@@ -1,0 +1,14 @@
+.characters-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+@media (max-width: 768px) {
+  .characters-list {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+  }
+}
